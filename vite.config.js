@@ -12,6 +12,7 @@ export default defineConfig({
     plugins: [
         vue(),
         AutoImport({
+            imports:["vue","vue-router","pinia"],//自动导入 ，以后就不用再写关于这些导入
             resolvers: [ElementPlusResolver()],
         }),
         Components({
